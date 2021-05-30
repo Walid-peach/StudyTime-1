@@ -6,10 +6,12 @@ import android.os.Bundle;
 
 public class BookingActivity extends AppCompatActivity {
 
+    private 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_booking);
-        
+
     }
 }
