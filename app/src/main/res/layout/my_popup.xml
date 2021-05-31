@@ -10,6 +10,7 @@
         android:id="@+id/R"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
         tools:ignore="MissingConstraints">
 
 
@@ -22,8 +23,7 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_marginTop="90dp"
-            android:layout_marginEnd="82dp"
-            android:layout_marginRight="26dp"
+            android:gravity="center"
             android:layout_marginBottom="-122dp"
             android:text=" Choisir la place exacte"
             android:textColor="#FCC64A"
@@ -34,75 +34,13 @@
             android:id="@+id/imageView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:contentDescription="TODO"
+
+            android:contentDescription="@string/todo"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/table" />
 
 
-
-
-        <RelativeLayout
-            android:id="@+id/R123"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginTop="120dp"
-            android:layout_marginBottom="120dp"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
-            app:layout_constraintTop_toTopOf="@+id/imageView2"
-            app:layout_constraintVertical_bias="0.362"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="-16dp">
-
-            <Button
-                android:id="@+id/place1"
-                android:layout_width="42dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_marginStart="112dp"
-                android:layout_marginLeft="112dp"
-                android:layout_marginEnd="35dp"
-                android:layout_marginRight="35dp"
-                android:layout_toStartOf="@+id/place2"
-                android:layout_toLeftOf="@+id/place2"
-                android:background="@color/black"
-                android:text="1"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="115dp"
-                tools:layout_editor_absoluteY="244dp" />
-
-            <Button
-                android:id="@+id/place2"
-                android:layout_width="38dp"
-                android:layout_height="47dp"
-                android:layout_marginEnd="36dp"
-                android:layout_marginRight="36dp"
-                android:layout_toStartOf="@+id/place3"
-                android:layout_toLeftOf="@+id/place3"
-                android:background="#ffffff"
-                android:text="2"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="186dp"
-                tools:layout_editor_absoluteY="244dp" />
-
-            <Button
-                android:id="@+id/place3"
-                android:layout_width="38dp"
-                android:layout_height="47dp"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_marginEnd="112dp"
-                android:layout_marginRight="112dp"
-                android:background="#ffffff"
-                android:text="3"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="261dp"
-                tools:layout_editor_absoluteY="244dp" />
-
-        </RelativeLayout>
         <RelativeLayout
             android:id="@+id/R84"
             android:layout_width="match_parent"
@@ -121,12 +59,8 @@
                 android:id="@+id/place4"
                 android:layout_width="38dp"
                 android:layout_height="47dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_marginStart="25dp"
-                android:layout_marginLeft="25dp"
-                android:layout_marginEnd="291dp"
-                android:layout_marginRight="291dp"
+                android:layout_marginEnd="203dp"
+                android:layout_marginRight="203dp"
                 android:layout_toStartOf="@+id/place8"
                 android:layout_toLeftOf="@+id/place8"
                 android:background="#ffffff"
@@ -149,70 +83,121 @@
                 tools:layout_editor_absoluteX="16dp"
                 tools:layout_editor_absoluteY="342dp" />
 
+            <RelativeLayout
+                android:id="@+id/R567"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+                app:layout_constraintTop_toTopOf="@+id/imageView2"
+                app:layout_constraintVertical_bias="0.362"
+                tools:ignore="MissingConstraints,NotSibling"
+                tools:layout_editor_absoluteX="-16dp">
+
+                <Button
+                    android:id="@+id/place5"
+                    android:layout_width="38dp"
+                    android:layout_height="47dp"
+
+
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_toStartOf="@+id/place6"
+                    android:layout_toLeftOf="@+id/place6"
+                    android:background="@color/purple_700"
+                    android:text="5"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="261dp"
+                    tools:layout_editor_absoluteY="435dp" />
+
+                <Button
+                    android:id="@+id/place6"
+                    android:layout_width="38dp"
+                    android:layout_height="47dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_toStartOf="@+id/place7"
+                    android:layout_toLeftOf="@+id/place7"
+                    android:background="@color/black"
+                    android:text="6"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="186dp"
+                    tools:layout_editor_absoluteY="435dp" />
+
+                <Button
+                    android:id="@+id/place7"
+                    android:layout_width="38dp"
+                    android:layout_height="47dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="70dp"
+                    android:layout_marginRight="112dp"
+                    android:background="@color/black"
+                    android:text="7"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="115dp"
+                    tools:layout_editor_absoluteY="435dp" />
+
+            </RelativeLayout>
+
         </RelativeLayout>
 
         <RelativeLayout
-            android:id="@+id/R567"
-            android:layout_width="match_parent"
+            android:id="@+id/R123"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginTop="218dp"
-            android:layout_marginBottom="218dp"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
-            app:layout_constraintTop_toTopOf="@+id/imageView2"
-            app:layout_constraintVertical_bias="0.362"
+            android:layout_marginTop="250dp"
+            app:layout_constraintBottom_toBottomOf="@+id/title"
+            app:layout_constraintTop_toTopOf="@+id/title"
+            app:layout_constraintVertical_bias="0.62"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="-16dp">
 
-            <Button
-                android:id="@+id/place5"
-                android:layout_width="38dp"
-                android:layout_height="47dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentLeft="true"
-                android:layout_marginStart="112dp"
-                android:layout_marginLeft="112dp"
-                android:layout_marginEnd="35dp"
-                android:layout_marginRight="35dp"
-                android:layout_toStartOf="@+id/place6"
-                android:layout_toLeftOf="@+id/place6"
-                android:background="#ffffff"
-                android:text="5"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="261dp"
-                tools:layout_editor_absoluteY="435dp" />
 
             <Button
-                android:id="@+id/place6"
+                android:id="@+id/place2"
                 android:layout_width="38dp"
                 android:layout_height="47dp"
-                android:layout_marginEnd="36dp"
-                android:layout_marginRight="36dp"
-                android:layout_toStartOf="@+id/place7"
-                android:layout_toLeftOf="@+id/place7"
-                android:background="#ffffff"
-                android:text="6"
+                android:layout_marginEnd="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_toStartOf="@+id/place3"
+                android:layout_toLeftOf="@+id/place3"
+                android:background="@color/black"
+                android:text="2"
                 tools:ignore="MissingConstraints"
                 tools:layout_editor_absoluteX="186dp"
-                tools:layout_editor_absoluteY="435dp" />
+                tools:layout_editor_absoluteY="244dp" />
 
             <Button
-                android:id="@+id/place7"
+                android:id="@+id/place3"
                 android:layout_width="38dp"
                 android:layout_height="47dp"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
-                android:layout_marginEnd="112dp"
+                android:layout_marginEnd="70dp"
                 android:layout_marginRight="112dp"
-                android:background="#ffffff"
-                android:text="7"
+                android:background="@color/black"
+                android:text="3"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="261dp"
+                tools:layout_editor_absoluteY="244dp" />
+
+            <Button
+                android:id="@+id/place1"
+                android:layout_width="38dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+
+                android:layout_toStartOf="@+id/place2"
+                android:layout_toLeftOf="@+id/place2"
+                android:background="@color/black"
+                android:text="1"
                 tools:ignore="MissingConstraints"
                 tools:layout_editor_absoluteX="115dp"
-                tools:layout_editor_absoluteY="435dp" />
+                tools:layout_editor_absoluteY="244dp" />
+
 
         </RelativeLayout>
-
 
 
     </RelativeLayout>
